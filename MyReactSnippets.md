@@ -1,7 +1,7 @@
 ## React Snippets
 
-VSCODE (Visual Studio Code) Snippets
-**prop-types** : [reference](https://www.npmjs.com/package/prop-types)
+VSCODE (Visual Studio Code) Snippets<br>
+`prop-types` : [reference](https://www.npmjs.com/package/prop-types)
 
 ```
 "React Component": {
