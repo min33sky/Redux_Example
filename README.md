@@ -4,15 +4,15 @@
 
 ## Table of Contents
 
-- [Redux?](#Redux?)
-  - [Action](#Action)
-  - [Reducer](#Reducer)
-- [Redux Component Description](#Redux-Component-Description)
-  - [Smart Component](#Smart-Component)
-  - [Dumb Component](#Dumb-Component)
-- [ETC](#ETC)
-  - [Spread Operator](#Spread-Operator)
-  - [React Snippets](React-Snippets)
+- [Redux?](#redux?)
+  - [Action](#action)
+  - [Reducer](#reducer)
+- [Redux Component Description](#redux-component-description)
+  - [Smart Component](#smart-component)
+  - [Dumb Component](#dumb-component)
+- [ETC](#etc)
+  - [Spread Operator](#spread-operator)
+  - [React Snippets](#react-snippets)
 
 ## Redux?
 
