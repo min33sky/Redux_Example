@@ -25,9 +25,7 @@ function createWarning(funcName){
  */
 class Control extends Component {
 
-    constructor(props) {
-        super(props);
-    }
+
 
     render() {
         return(

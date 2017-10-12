@@ -15,7 +15,6 @@ export function decrement() {
 export function setColor(color) {
     return {
         type: types.SET_COLOR,
-        // this.color = color와 같다
         color
     };
 }
