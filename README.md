@@ -1,6 +1,8 @@
 # Redux Project Practice
 `Redux`를 이용해서 기본적인 프로젝트 구현
 
+## Table of Contents
+
 - [Redux?](#Redux?)
     - [Action](#Action)
     - [Reducer](#Reducer)
@@ -9,6 +11,7 @@
     - [Dumb Component](#Dumb-Component)
 - [ETC](#ETC)
     - [Spread Operator](#Spread-Operator)
+    - [React Snippets](#React-Snippets)
 
 ## Redux?
 
@@ -37,12 +40,13 @@
 * **Redux**와 직접 소통하지 않고 props를 이용해서 DOM을 다루는 Component
     * Counter, Value
 
+
 ## ETC
 
 ### Spread Operator
 
-```
-const state = {
+```diff
+    const state = {
 +   number: 0,
     dummy: 'dumbdumb',
     dumbObject: {
@@ -52,14 +56,51 @@ const state = {
         b: 3
     }
 };
-
 ```
+
+
+
 
 **state**객체를 쉽게 변화하는 방법(ES6) : `Spread`연산자 이용
 
 
-```
+```js
 ...state,
-            number: state.number + 1,
-            dumbObject: {...state.dumbObject, u: 0}
+        number: state.number + 1,
+        dumbObject: {...state.dumbObject, u: 0}
+```
+
+## React Snippets
+
+VSCODE (Visual Studio Code) Snippets<br>
+`prop-types` : [reference](https://www.npmjs.com/package/prop-types)
+
+```sh
+npm install --save prop-types
+```
+
+```json
+"React Component": {
+		"prefix": "rc",
+		"body": [
+			"import React, { Component } from 'react';",
+			"import PropTypes from 'prop-types';\n\n",
+			"const propTypes = {\n\n};\n",
+			"const defaultProps = {\n\n};\n",
+			"class ${1:MyComponent} extends Component {\n",
+				"\tconstructor(props) {",
+					"\t\tsuper(props);",
+				"\t}\n",
+				"\trender() {",
+				"\t\treturn(",
+				"\t\t\t<div>${1:MyComponent}</div>",
+				"\t\t);",
+				"\t}",
+			"}\n\n",
+			"${1:MyComponent}.propTypes = propTypes;",
+			"${1:MyComponent}.defaultProps = defaultProps;\n\n",
+			"export default ${1:MyComponent};"
+		],
+		"description": "React Component Snippets"
+	}
 ```
